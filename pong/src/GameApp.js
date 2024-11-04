@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { Game, Scene, GameObject, Transform, OrthographicCamera, Color, Text } from '@mfkucuk/banana-js';
-import { Ball } from './Ball';
-import { Paddle } from './Paddle';
-import { Wall } from './Wall';
+import { Ball } from './prefabs/Ball';
+import { Paddle } from './prefabs/Paddle';
+import { Wall } from './prefabs/Wall';
+import { Score } from './prefabs/Score';
 
-export default function App() {
+export default function Pong() {
     const [leftScore, setLeftScore] = useState(0);
     const [rightScore, setRightScore] = useState(0);
 
     const updateScore = (x) => {
-
         if (x > 0) {
             setLeftScore(prevLeftScore => prevLeftScore + 1);
         } else {
@@ -25,15 +25,8 @@ export default function App() {
                     <OrthographicCamera bgColor={Color.black}/>   
                 </GameObject>
 
-                <GameObject name="Score_Left">
-                    <Transform position={[-2.3, -3, 0]}/>
-                    <Text fontSize={50} fontFamily="fantasy" color={Color.white}>{leftScore}</Text>
-                </GameObject>
-
-                <GameObject name="Score_Right">
-                    <Transform position={[2.3, -3, 0]}/>
-                    <Text fontSize={50} fontFamily="fantasy" color={Color.white}>{rightScore}</Text>
-                </GameObject>
+                <Score position={[-2.3, -3, 0]} score={leftScore}/>
+                <Score position={[2.3, -3, 0]} score={rightScore}/>
 
                 <Wall position={[0, -5, 0]}/>
                 <Wall position={[0, 5, 0]}/>

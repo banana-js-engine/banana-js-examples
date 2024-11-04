@@ -9,7 +9,7 @@ export function Wall(props) {
         <GameObject name="Wall">
             <Transform position={props.position} scale={[14, 1, 1]}/>
             <Sprite/>
-            <BoxBody2D shape={ShapeType.Box} isStatic/>
+            <BoxBody2D isStatic={true} gravityScale={0} restitution={1}/>
         </GameObject>
     );
 }

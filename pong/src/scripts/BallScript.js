@@ -9,16 +9,14 @@ export class BallScript extends ScriptComponent {
         this.#body = this.getComponent(ComponentType.Body2D);
         this.#transform = this.getComponent(ComponentType.Transform);
 
-        const initialForce = Vector2.zero;
-
-        initialForce.x = -1;
-        initialForce.y = 1;
+        const initialForce = new Vector2(-5, 5);
 
         this.#body.addForce(initialForce);
     }
 
     onExitViewport() {
         this.onBallExit(this.#transform.position.x);
+        this.#transform.moveTo(0, 0, 0);
     }
 
 }
