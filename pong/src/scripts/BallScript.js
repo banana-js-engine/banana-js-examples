@@ -3,11 +3,9 @@ import { ComponentType, ScriptComponent, Vector2 } from "@mfkucuk/banana-js";
 export class BallScript extends ScriptComponent {
 
     #body;
-    #transform;
 
     ready() {
         this.#body = this.getComponent(ComponentType.Body2D);
-        this.#transform = this.getComponent(ComponentType.Transform);
 
         const initialForce = new Vector2(-5, 5);
 
@@ -15,8 +13,8 @@ export class BallScript extends ScriptComponent {
     }
 
     onExitViewport() {
-        this.onBallExit(this.#transform.position.x);
-        this.#transform.moveTo(0, 0, 0);
+        this.onBallExit(this.transform.position.x);
+        this.transform.moveTo(0, 0, 0);
     }
 
 }
