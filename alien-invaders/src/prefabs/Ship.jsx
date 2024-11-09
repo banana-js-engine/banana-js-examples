@@ -1,5 +1,10 @@
 import { GameObject, Transform, Sprite, Script, Animator, Animation } from '@mfkucuk/banana-js';
 
+/**
+ * 
+ * @param {{ onBulletHit }} props 
+ * @returns 
+ */
 export function Ship(props) {
     return (
         <GameObject name="Ship">
@@ -11,7 +16,7 @@ export function Ship(props) {
                 <Animation src="SpaceAsset.png" name="Left" firstFrame={0} frames={0} cellWidth={8} cellHeight={8}/>
                 <Animation src="SpaceAsset.png" name="Right" firstFrame={2} frames={0} cellWidth={8} cellHeight={8}/>
             </Animator>
-            <Script import={import('../scripts/ShipScript')} speed={8}/>
+            <Script import={import('../scripts/ShipScript')} speed={8} onBulletHit={props.onBulletHit}/>
         </GameObject>
     );
 }
