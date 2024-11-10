@@ -29,8 +29,15 @@ export class ShipScript extends ScriptComponent {
             this.#animator.playAnimation('Idle');
         }
 
+        // Touch movement
+        if (Input.touchPosition.x != 0 && Input.touchPosition.y != 0) {
+            this.transform.moveTo(this.mainCamera.screenToWorldSpace(Input.touchPosition).x,
+            this.transform.position.y, 
+            this.transform.position.z);
+        }
+
         // Shooting
-        if (Input.getKeyDown(' ')) {
+        if (Input.getKeyDown(' ') || Input.getTap()) {
             const pos = Vector3.down.div(4);
             pos.add(this.transform.position)
             this.createPrefab(<Bullet position={pos} onBulletHit={this.onBulletHit}/>);
