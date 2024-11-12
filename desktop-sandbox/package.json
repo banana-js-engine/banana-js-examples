@@ -1,0 +1,35 @@
+{
+  "name": "desktop-sandbox",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "babel src --out-dir build",
+    "package": "electron-packager . --out=dist --overwrite"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.25.7",
+    "@babel/core": "^7.25.8",
+    "@babel/preset-env": "^7.25.8",
+    "@babel/preset-react": "^7.25.7",
+    "@mfkucuk/banana-js": "latest",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-packager": "^17.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
