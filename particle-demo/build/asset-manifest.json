@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/particle-demo/static/js/main.918d8ea7.js",
-    "static/js/405.de19cb11.chunk.js": "/particle-demo/static/js/405.de19cb11.chunk.js",
-    "index.html": "/particle-demo/index.html",
-    "main.918d8ea7.js.map": "/particle-demo/static/js/main.918d8ea7.js.map",
-    "405.de19cb11.chunk.js.map": "/particle-demo/static/js/405.de19cb11.chunk.js.map"
+    "main.js": "/banana-js-examples/particle-demo/static/js/main.df06395a.js",
+    "static/js/405.de19cb11.chunk.js": "/banana-js-examples/particle-demo/static/js/405.de19cb11.chunk.js",
+    "index.html": "/banana-js-examples/particle-demo/index.html",
+    "main.df06395a.js.map": "/banana-js-examples/particle-demo/static/js/main.df06395a.js.map",
+    "405.de19cb11.chunk.js.map": "/banana-js-examples/particle-demo/static/js/405.de19cb11.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.918d8ea7.js"
+    "static/js/main.df06395a.js"
   ]
 }
