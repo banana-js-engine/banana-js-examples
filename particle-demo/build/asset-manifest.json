@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/banana-js-examples/particle-demo/static/js/main.df06395a.js",
-    "static/js/405.de19cb11.chunk.js": "/banana-js-examples/particle-demo/static/js/405.de19cb11.chunk.js",
-    "index.html": "/banana-js-examples/particle-demo/index.html",
-    "main.df06395a.js.map": "/banana-js-examples/particle-demo/static/js/main.df06395a.js.map",
-    "405.de19cb11.chunk.js.map": "/banana-js-examples/particle-demo/static/js/405.de19cb11.chunk.js.map"
+    "main.js": "/banana-js-engine/banana-js-examples/particle-demo/static/js/main.4aeb62d3.js",
+    "static/js/405.de19cb11.chunk.js": "/banana-js-engine/banana-js-examples/particle-demo/static/js/405.de19cb11.chunk.js",
+    "index.html": "/banana-js-engine/banana-js-examples/particle-demo/index.html",
+    "main.4aeb62d3.js.map": "/banana-js-engine/banana-js-examples/particle-demo/static/js/main.4aeb62d3.js.map",
+    "405.de19cb11.chunk.js.map": "/banana-js-engine/banana-js-examples/particle-demo/static/js/405.de19cb11.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.df06395a.js"
+    "static/js/main.4aeb62d3.js"
   ]
 }
