@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/particle-demo/static/js/main.918d8ea7.js",
+    "static/js/405.de19cb11.chunk.js": "/particle-demo/static/js/405.de19cb11.chunk.js",
+    "index.html": "/particle-demo/index.html",
+    "main.918d8ea7.js.map": "/particle-demo/static/js/main.918d8ea7.js.map",
+    "405.de19cb11.chunk.js.map": "/particle-demo/static/js/405.de19cb11.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.918d8ea7.js"
+  ]
+}

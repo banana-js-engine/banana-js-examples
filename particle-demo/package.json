@@ -2,7 +2,7 @@
   "name": "particle-demo",
   "version": "1.0.0",
   "main": "src/index.js",
-  "homepage": "https://banana-js-engine.github.io/particle-demo",
+  "homepage": "https://banana-js-engine.github.io/banana-js-examples/particle-demo",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
