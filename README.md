@@ -5,6 +5,7 @@
 
 ## Demos
 - ✨[Particle Demo](https://banana-js-engine.github.io/particle-demo/)
+- 🗺️[Tilemap Demo](https://banana-js-engine.github.io/tilemap-demo/)
 
 ## Sandbox projects
 - 🖥️Desktop version: `/desktop-sandbox`
