@@ -1,4 +1,4 @@
-import { Game, Scene, GameObject, Transform, OrthographicCamera, Script, PlatformType, Dialogue, Color, Text } from '@mfkucuk/banana-js';
+import { Game, Scene, GameObject, Transform, OrthographicCamera, Script, PlatformType, Dialogue, Color, Text, Audio } from '@mfkucuk/banana-js';
 
 export default function GameApp() {
     return (
@@ -16,6 +16,8 @@ export default function GameApp() {
 
                 <GameObject>
                     <Transform position={[0, 2, 0]}/>
+                    <Audio src='text-scroll.mp3' playOnStart loop volume={0.3}/>
+
                     <Dialogue playOnStart color={Color.white} fontSize={16}>
                         <div>Welcome to the banana.js dialogue demo!</div>
                         <div>This dialogue is made entirely in the JSX file.</div>
